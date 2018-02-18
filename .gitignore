@@ -17,3 +17,5 @@ buildNumber.properties
 build/
 target/
 .gradle/
+out/
+*.mv.db

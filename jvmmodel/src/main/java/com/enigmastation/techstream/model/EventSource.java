@@ -9,12 +9,12 @@ import java.time.Instant;
 
 @Data
 @NoArgsConstructor
-@MappedSuperclass
+@Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public class EventSource {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    Integer id;
+    Long id;
     String name;
     /* might change, because this is a discriminator field */
     String type;

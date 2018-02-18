@@ -15,6 +15,8 @@
         <property name="show_sql">true</property>
         <!--  make sure the database and the entity model are consistent -->
         <property name="hbm2ddl.auto">update</property>
+        <mapping class="com.enigmastation.techstream.model.EventSource"/>
         <mapping class="com.enigmastation.techstream.model.github.RepoEventSource"/>
+        <mapping class="com.enigmastation.techstream.model.github.RepoEvent"/>
     </session-factory>
 </hibernate-configuration>
