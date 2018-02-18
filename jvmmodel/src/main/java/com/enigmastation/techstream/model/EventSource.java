@@ -10,6 +10,7 @@ import java.time.Instant;
 @Data
 @NoArgsConstructor
 @MappedSuperclass
+@Inheritance(strategy = InheritanceType.JOINED)
 public class EventSource {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

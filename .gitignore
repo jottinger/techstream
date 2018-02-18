@@ -16,4 +16,4 @@ buildNumber.properties
 *.iml
 build/
 target/
-
+.gradle/
